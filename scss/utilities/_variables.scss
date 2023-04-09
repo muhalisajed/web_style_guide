@@ -1,5 +1,4 @@
 // Colors
-
 $white: #fff;
 
 $color-primary: #58e1c1;
@@ -8,8 +7,13 @@ $color-secondary: #51ddfc;
 $color-text: #777;
 $color-border: #ccc;
 
-// Fonts
-$font-stack-primary: 'Lato', sans-serif;
+$color-btn-bg: (
+    'def': #51ddfc,
+    'err': #e4757a,
+    'info': #927bc1,
+    'succ': #63cc82,
+    'warn': #fd7856,
+);
 
 // Breakpoints
 $break-m: 768px;

@@ -1,9 +1,11 @@
+@import '../utilities/variables';
+
 .nav {
     padding-left: 0;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    &-link {
+    & -link {
         text-align: center;
         border-radius: 5px;
         padding: 10px 0;

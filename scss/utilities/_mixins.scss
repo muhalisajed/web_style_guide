@@ -1,3 +1,7 @@
 @mixin for-tablet {
     @media (min-width: 768px) { @content; }
 }
+
+@mixin bg-color($color-hover-light) {
+    &:hover {background-color: lighten($color: $color-hover-light , $amount: 15%);}
+}

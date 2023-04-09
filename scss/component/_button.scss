@@ -1,3 +1,5 @@
+@import '../utilities/mixins';
+
 .btn {
     margin-top: 15px;
     width: 100%;
@@ -7,33 +9,35 @@
     text-transform: uppercase;
     border-radius: 5px;
     transition: 0.2s;
-    &:hover {
-      background-color: lighten($amount: 15%);
-    }
+
     @include for-tablet {
         padding: 10px 30px;
         + .btn {
             margin-left: 10px;
           }
     }
-  }
-
-  .default {
-    background-color: #51ddfc;
-  }
-  
-  .error {
-    background-color: #e4757a;
-  }
-  
-  .info {
-    background-color: #927bc1;
-  }
-  
-  .success {
-    background-color: #63cc82;
-  }
-  
-  .warning {
-    background-color: #fd7856;
+    &.default {
+      background-color: #51ddfc;
+      @include bg-color(#51ddfc)
+    }
+    
+    .error {
+      background-color: #e4757a;
+     @include bg-color(#e4757a)
+    }
+    
+    .info {
+      background-color: #927bc1;
+      @include bg-color(#927bc1)
+    }
+    
+    .success {
+      background-color: #63cc82;
+      @include bg-color(#63cc82)
+    }
+    
+    .warning {
+      background-color: #fd7856;
+      @include bg-color(#fd7856)
+    }
   }

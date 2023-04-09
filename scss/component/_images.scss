@@ -21,4 +21,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    @include for-tablet {
+      &.logo {
+        margin-left: initial;
+        margin-right: initial;
+      }
+    }
   }

@@ -1,6 +1,7 @@
-@import '../utilities/mixins';
+@import '../utilities/index';
   
-  .container {
+  
+.container {
     padding: 0 10px;
     @include for-tablet {
         max-width: 1400px;
@@ -10,6 +11,14 @@
     }
   }
   
+@include for-tablet {
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
   .row {
     display: flex;
     flex-direction: column;
@@ -30,7 +39,7 @@
         justify-content: center;
         margin-top: 0;
         align-items: center;
-        & + [class^=col] {
+        &+[class^=col] {
           margin-left: 10px;
         }
     }
@@ -63,13 +72,6 @@
   
     &.col-7 {
     background-color: #ec9fa3;
-    @include for-tablet {
-      &.centered {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
   }
   
     &.col-8 {
@@ -91,57 +93,59 @@
     &.col-12 {
     background-color: #80e8d1;
   }
-  @include for-tablet {
-    .col-1 {
-      flex-basis: 8.33%;
-    }
-    
-    .col-2 {
-      flex-basis: 16.67%;
-    }
-    
-    .col-3 {
-      flex-basis: 25.00%;
-    }
-    
-    .col-4 {
-      flex-basis: 33.33%;
-    }
-    
-    .col-5 {
-      flex-basis: 41.67%;
-    }
-    
-    .col-6 {
-      flex-basis: 50.00%;
-    }
-    
-    .col-7 {
-      flex-basis: 58.33%;
-    }
-    
-    .col-8 {
-      flex-basis: 66.67%;
-    }
-    
-    .col-9 {
-      flex-basis: 75.00%
-    }
-    
-    .col-10 {
-      flex-basis: 83.33%;
-    }
-    
-    .col-11 {
-      flex-basis: 91.67%;
-    }
-    
-    .col-12 {
-      flex-basis: 100%;
-    }
-  }
+ 
 }
 
+@include for-tablet {
+
+  .col-1 {
+    flex-basis: 8.33%;
+  }
+  
+  .col-2 {
+    flex-basis: 16.67%;
+  }
+  
+  .col-3 {
+    flex-basis: 25.00%;
+  }
+  
+  .col-4 {
+    flex-basis: 33.33%;
+  }
+  
+  .col-5 {
+    flex-basis: 41.67%;
+  }
+  
+  .col-6 {
+    flex-basis: 50.00%;
+  }
+  
+  .col-7 {
+    flex-basis: 58.33%;
+  }
+  
+  .col-8 {
+    flex-basis: 66.67%;
+  }
+  
+  .col-9 {
+    flex-basis: 75.00%
+  }
+  
+  .col-10 {
+    flex-basis: 83.33%;
+  }
+  
+  .col-11 {
+    flex-basis: 91.67%;
+  }
+  
+  .col-12 {
+    flex-basis: 100%;
+  }
+}
   .card {
     flex-basis: 100%;
   }

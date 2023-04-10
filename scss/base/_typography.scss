@@ -1,7 +1,7 @@
 @import '../utilities/variables';
 
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif;
     color: $color-text;
     box-sizing: border-box;
   }
@@ -15,11 +15,11 @@
   }
 
 .headline {
-    primary {
+    &-primary {
         color: $color-primary;
         margin-left: 10px;
       }
-    secondary {
+    &-secondary {
         font-weight: 300;
         color: $color-text;
       } 

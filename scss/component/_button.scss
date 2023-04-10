@@ -1,4 +1,4 @@
-@import '../utilities/mixins';
+@import '../utilities/index';
 
 .btn {
     margin-top: 15px;
@@ -12,7 +12,7 @@
 
     @include for-tablet {
         padding: 10px 30px;
-        + .btn {
+        &+.btn {
             margin-left: 10px;
           }
     }
@@ -21,22 +21,22 @@
       @include bg-color(#51ddfc)
     }
     
-    .error {
+    &.error {
       background-color: #e4757a;
      @include bg-color(#e4757a)
     }
     
-    .info {
+    &.info {
       background-color: #927bc1;
       @include bg-color(#927bc1)
     }
     
-    .success {
+    &.success {
       background-color: #63cc82;
       @include bg-color(#63cc82)
     }
     
-    .warning {
+    &.warning {
       background-color: #fd7856;
       @include bg-color(#fd7856)
     }

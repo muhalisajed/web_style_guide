@@ -7,13 +7,12 @@ $color-secondary: #51ddfc;
 $color-text: #777;
 $color-border: #ccc;
 
-$color-btn-bg: (
-    'def': #51ddfc,
-    'err': #e4757a,
-    'info': #927bc1,
-    'succ': #63cc82,
-    'warn': #fd7856,
-);
+$color-btn-def: #51ddfc; 
+$color-btn-err: #e4757a;
+$color-btn-info: #927bc1;
+$color-btn-succ: #63cc82;
+$color-btn-warn: #fd7856;
+
 
 // Breakpoints
 $break-m: 768px;

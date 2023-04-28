@@ -16,28 +16,30 @@
             margin-left: 10px;
           }
     }
+
+
     &.default {
-      background-color: #51ddfc;
-      @include bg-color(#51ddfc)
+      background-color: $color-btn-def;
+      @include bg-color($color-btn-def);
     }
     
     &.error {
-      background-color: #e4757a;
-     @include bg-color(#e4757a)
+      background-color: $color-btn-err;
+     @include bg-color($color-btn-err);
     }
     
     &.info {
-      background-color: #927bc1;
-      @include bg-color(#927bc1)
+      background-color: $color-btn-info;
+      @include bg-color($color-btn-info);
     }
     
     &.success {
-      background-color: #63cc82;
-      @include bg-color(#63cc82)
+      background-color: $color-btn-succ;
+      @include bg-color($color-btn-succ);
     }
     
     &.warning {
-      background-color: #fd7856;
-      @include bg-color(#fd7856)
+      background-color: $color-btn-warn;
+      @include bg-color($color-btn-warn);
     }
   }
